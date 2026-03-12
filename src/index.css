@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0D9488;
+  --color-primary-dark:#0F2B2B;
+  --color-accent: #F59E0B;
+  --color-page-bg:#FAF8F5;
+  --color-text-main: #333333;
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+@layer utilities {
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Background colors */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-primary-dark {
+    background-color: var(--color-primary-dark);
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .bg-page {
+    background-color: var(--color-page-bg);
+  }
+
+  /* Text colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-primary-dark {
+    color: var(--color-primary-dark);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .text-main {
+    color: var(--color-text-main);
+  }
+
+  /* Hover */
+  .hover\:bg-primary-dark:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .hover\:text-primary-dark:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .hover\:bg-accent:hover {
+    background-color: var(--color-accent);
+  }
+
+  .hover\:text-accent:hover {
+    color: var(--color-accent);
+  }
+
+  .hover\:bg-primary:hover {
+    background-color: var(--color-primary);
+  }
+
+}
