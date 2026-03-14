@@ -37,6 +37,10 @@
     background-color: var(--color-page-bg);
   }
 
+  .bg-main {
+     background-color: var(--color-text-main);
+  }
+
   /* Text colors */
   .text-primary {
     color: var(--color-primary);
