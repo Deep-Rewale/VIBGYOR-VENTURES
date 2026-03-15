@@ -32,7 +32,7 @@ const HowItsWork = () => {
         {content.map((item, index) => (
           <div
             key={index}
-            className={`p-5 border mt-8 h-120 w-full grid place-items-center text-center  ${index === 0 ? "col-span-2 bg-primary-dark" : "col-span-1 bg-[#212121]"} relative rounded-2xl`}
+            className={`p-5 border mt-8 h-120 w-full grid place-items-center text-center  ${index === 0 ? "col-span-2 bg-primary-dark" : "col-span-1 bg-[#212121]"} relative rounded-2xl shadow-2xl `}
           >
             <div className="space-y-5">
               <div>

@@ -33,7 +33,10 @@ const LandingPage = () => {
             "Premium corporate gifting for India's leading companies.",
             "Celebrate employees, build loyalty & deliver joy - at any scale.",
           ].map((content, index) => (
-            <div className="text-primary-dark text-xl font-heading"> {content} </div>
+            <div className="text-primary-dark text-xl font-heading">
+              {" "}
+              {content}{" "}
+            </div>
           ))}
           <div className="button cursor-pointer flex items-center gap-2 text-xl uppercase py-4">
             <div className="border-2 border-gray-400 py-1 px-5 rounded-3xl font-heading ">
