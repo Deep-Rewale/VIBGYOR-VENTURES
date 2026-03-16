@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Company-logo/logo.png";
+import NavlinkAnimation from "./UnderlineEffect/NavlinkAnimation";
 
 const Links = [
   {
@@ -40,13 +41,15 @@ const Navbar = () => {
       </div>
       <div className="right-links flex gap-10">
         {Links.map((item, index) => (
-          <Link
+           <Link
             className={`text-xl capitalize ${index === 5 && "ml-32"}`}
             key={index}
             to={item.link}
-          >
+          ><NavlinkAnimation>
             {item.Name}
+          </NavlinkAnimation>
           </Link>
+      
         ))}
       </div>
     </nav>

@@ -24,7 +24,7 @@ const ChooseContent = [
 
 const OurVision = () => {
   return (
-    <section className="bg-[#56bdb4] py-20 px-10 rounded-t-3xl">
+    <section className="bg-[#56bdb4] py-20 px-10 rounded-t-3xl ">
       {/* title text */}
       <div className="space-y-5">
         <h3 className="text-6xl  font-heading tracking-tight">
@@ -33,7 +33,7 @@ const OurVision = () => {
         {/* <p className='text-4xl  italic font-body tracking-tight'> “Every gift tells a story. Every event creates a memory.”</p> */}
       </div>
       {/* why we chose content */}
-      <div className="space-y-7 mt-10">
+      <div className="space-y-7 mt-10 ">
         {ChooseContent.map((choose, index) => (
           <div className="space-y-4">
             <span className="flex gap-5">

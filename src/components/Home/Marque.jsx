@@ -3,7 +3,12 @@ import { motion } from "motion/react";
 
 const Marque = () => {
   return (
-    <div className="bg-primary-dark py-20 rounded-t-3xl w-full">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="0.001"
+      className="bg-primary-dark py-20 rounded-t-3xl w-full "
+    >
       <div className="border-t border-b border-[#FAF8F5] flex whitespace-nowrap overflow-hidden ">
         <motion.h1
           initial={{ x: 0 }}

@@ -5,6 +5,8 @@ import img1 from "../../assets/Home/Corporate Picks/img-1.jpg";
 import img2 from "../../assets/Home/Corporate Picks/img-2.jpg";
 import img3 from "../../assets/Home/Corporate Picks/img-3.avif";
 import img4 from "../../assets/Home/Corporate Picks/img-4.jpg";
+import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "motion/react";
 
 const CorporateGifts = [
   {
@@ -31,7 +33,7 @@ const CorporateGifts = [
 
 const CorporatePicks = () => {
   return (
-    <section className="bg-page py-15 px-10 shadow-t-2xl">
+    <section className="bg-page py-15 px-10 shadow-t-3xl rounded-t-3xl">
       {/* title text */}
       <div>
         <h3 className="text-6xl font-semibold uppercase font-body text-main tracking-tight">
@@ -68,10 +70,31 @@ const CorporatePicks = () => {
                 <p className="text-4xl text-main">
                   <Underline>{item.amount}</Underline>
                 </p>
-                <button className="rounded-4xl border border-black px-8 py-4 flex  items-center uppercase gap-8 mt-7  text-white bg-black text-xl  cursor-pointer">
-                  Check Out{" "}
-                  <span className="h-3 w-3 rounded-full bg-white"></span>
-                </button>
+                <motion.button
+                  initial="rest"
+                  whileHover="hover"
+                  className="rounded-4xl border border-black px-8 py-4 flex items-center uppercase gap-8 mt-7 text-white bg-black text-xl cursor-pointer"
+                >
+                  Check Out
+                  <motion.div
+                    variants={{
+                      rest: { scale: 1 },
+                      hover: { scale: 3 },
+                    }}
+                    transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                    className="w-3 h-3 bg-white rounded-full flex items-center justify-center overflow-hidden"
+                  >
+                    <motion.div
+                      variants={{
+                        rest: { opacity: 0, scale: 0 },
+                        hover: { opacity: 1, scale: 0.5 }, // ← 0.35 because parent is scaled x3
+                      }}
+                      transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                    >
+                      <GoArrowUpRight color="black" size={16} />
+                    </motion.div>
+                  </motion.div>
+                </motion.button>
               </div>
               {/* right image */}
               <div className="w-1/2 rounded-3xl overflow-hidden">

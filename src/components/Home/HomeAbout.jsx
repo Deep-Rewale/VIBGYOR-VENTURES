@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Underline from "../../components/UnderlineEffect/Underline";
-import Helping from "../../assets/Home/AboutUs/helping.jpg"
+import Helping from "../../assets/Home/AboutUs/helping.jpg";
+import { GoArrowUpRight } from "react-icons/go";
 const HomeAbout = () => {
   return (
     <section className="w-full rounded-t-3xl bg bg-[#56bdb4] py-20 px-10">
@@ -56,11 +57,37 @@ const HomeAbout = () => {
           <div className="pt-6 flex">
             {/* left content */}
             <div className="w-1/2">
-            <h3 className="text-6xl font-heading">How we can help:</h3>
-            <button className="rounded-4xl border border-black px-8 py-4 flex  items-center uppercase gap-8 mt-7  text-white bg-black text-xl">Read more <div className="w-3 h-3 bg-white rounded-full"></div></button>
+              <h3 className="text-6xl font-heading">How we can help:</h3>
+              {/* button */}
+              <motion.button
+                initial="rest"
+                whileHover="hover"
+                className="rounded-4xl border border-black px-8 py-4 flex items-center uppercase gap-8 mt-7 text-white bg-black text-xl cursor-pointer"
+              >
+                Read more
+                <motion.div
+                  variants={{
+                    rest: { scale: 1 },
+                    hover: { scale: 3 },
+                  }}
+                  transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                  className="w-3 h-3 bg-white rounded-full flex items-center justify-center overflow-hidden"
+                >
+                  <motion.div
+                    variants={{
+                      rest: { opacity: 0, scale: 0 },
+                      hover: { opacity: 1, scale: 0.5 }, // ← 0.35 because parent is scaled x3
+                    }}
+                    transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                  >
+                    <GoArrowUpRight color="black" size={16} />
+                  </motion.div>
+                </motion.div>
+              </motion.button>
             </div>
             {/* right content */}
-            <div className="w-1/2"><img className="rounded-2xl" src={Helping} alt="helping image" />
+            <div className="w-1/2">
+              <img className="rounded-2xl" src={Helping} alt="helping image" />
             </div>
           </div>
         </div>

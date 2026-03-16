@@ -8,8 +8,12 @@ import Help from "./pages/Help";
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
 import Navbar from "./components/Navbar";
+import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
+
+  const locomotiveScroll = new LocomotiveScroll();
+ 
   return (
     <div className="w-full overflow-x-hidden">
       {/* Used react router for route handling */}
