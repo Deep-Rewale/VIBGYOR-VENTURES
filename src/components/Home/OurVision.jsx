@@ -7,17 +7,17 @@ import Underline from "../UnderlineEffect/Underline";
 const ChooseContent = [
   {
     title: "Uncompromising Quality",
-    para: "Every product and experience undergoes rigorous quality checks to meet premium corporate standards.",
+    para: "We deliver premium standards across events, branding and corporate gifting with strict quality checks at every stage.",
     icon: <FaCheckCircle />,
   },
   {
     title: "Customization at Core",
-    para: "Tailor-made gifting and event solutions crafted to reflect your brand identity and values.",
+    para: "Every solution is tailored - from creative campaigns to event experiences and curated gifting that reflects your brand identity.",
     icon: <FaGift />,
   },
   {
-    title: "Seamless Logistics",
-    para: "TPan-India sourcing, packaging, and delivery with reliable execution and timely fulfillment.",
+    title: "Seamless Execution",
+    para: "From planning to delivery, we ensure smooth execution with reliable timelines across pan-India operations.",
     icon: <FaTruckMoving />,
   },
 ];
@@ -59,21 +59,13 @@ const OurVision = () => {
           {/* right text */}
           <div className="w-1/2 ">
             <p className="max-w-lg font-body text-xl">
-              Meaningful gifting is not about products - it’s about creating
-              moments that people remember, value, and emotionally connect with.
+              We believe meaningful experiences go beyond products - they create lasting emotional connections.
             </p>
             <p className="max-w-lg font-body text-xl mt-11">
-              At Vibgyor Venture, our vision is to redefine corporate gifting
-              and professional events by transforming them into powerful,
-              meaningful brand experiences. We strive to go beyond conventional
-              solutions - creating moments that communicate purpose, evoke
-              emotion, and strengthen lasting relationships.
+              At Vibgyor Venture, our vision is to redefine corporate gifting, branding, and events into impactful brand experiences that inspire, engage, and build lasting relationships.
             </p>
             <p className="max-w-lg font-body text-xl mt-11">
-              Our aspiration is to become India’s most trusted corporate
-              partner, known for our creativity, reliability, and attention to
-              detail, where every gift, celebration, and event reflects
-              elegance, authenticity, and enduring emotional value.
+             Our goal is to become a trusted partner for businesses across India, known for creativity, reliability, and delivering experiences that reflect true brand value.
             </p>
           </div>
         </div>
@@ -90,22 +82,13 @@ const OurVision = () => {
           {/* right text */}
           <div className="w-1/2 ">
             <p className="max-w-lg font-body text-xl">
-              At Vibgyor Venture, our mission is to deliver thoughtfully curated
-              corporate gifting and event solutions that strengthen meaningful
-              relationships between organizations and their people.
+             Our mission is to deliver thoughtful gifting, branding, and event solutions that strengthen meaningful connections between brands and people.
             </p>
             <p className="max-w-lg font-body text-xl mt-11">
-              We are committed to excellence through uncompromising quality,
-              personalized customization, timely execution, and seamless
-              logistics. By managing every detail with precision and care, we
-              ensure that each experience not only meets expectations but
-              consistently exceeds them-leaving a lasting impression of trust,
-              appreciation, and brand value.
+              We focus on quality, customization, and seamless execution - ensuring every experience is delivered with precision, care, and consistency.
             </p>
             <p className="max-w-lg font-body text-xl mt-11">
-              By combining creativity with precision, we help brands communicate
-              appreciation, trust, and value — turning ordinary moments into
-              meaningful milestones.
+             By blending creativity with execution, we help brands turn everyday moments into memorable experiences that build trust and long-term value.
             </p>
           </div>
         </div>

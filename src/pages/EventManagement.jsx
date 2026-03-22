@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Feedback = () => {
+const EventManagement = () => {
   return (
     <div>Feedback</div>
   )
 }
 
-export default Feedback
+export default EventManagement;

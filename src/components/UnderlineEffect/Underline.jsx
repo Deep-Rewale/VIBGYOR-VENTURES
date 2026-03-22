@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const Underline = ({ children }) => {
+const Underline = ({ children, height= 3 }) => {
   const controls = useAnimation();
 
   const handleHoverStart = async () => {
@@ -28,9 +28,9 @@ const Underline = ({ children }) => {
         initial={{ scaleX: 1 }}
         style={{
           position: "absolute",
-          bottom: -4,
+          bottom: -2,
           left: 0,
-          height: 3,
+          height: height,
           width: "100%",
           background: "black",
           display: "block",

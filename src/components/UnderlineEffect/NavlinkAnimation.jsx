@@ -76,7 +76,7 @@ const NavlinkAnimation = ({ children }) => {
           position: "absolute",
           bottom: 0,
           left: 0,
-          height: "2px",
+          height: "1px",
           width: "100%",
           background: "currentColor",
           display: "block",

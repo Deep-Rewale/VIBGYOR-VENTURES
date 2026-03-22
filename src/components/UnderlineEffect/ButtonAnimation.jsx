@@ -15,22 +15,22 @@ const ButtonAnimation = ({
   const handleHoverStart = async () => {
     fillControls.start({
       y: "0%",
-      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
     });
     textControls.start({
       color: hoverTextColor,
-      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
     });
   };
 
   const handleHoverEnd = async () => {
     fillControls.start({
       y: "-100%",
-      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
     });
     textControls.start({
       color: textColor,
-      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
     });
     setTimeout(() => {
       fillControls.set({ y: "100%" });

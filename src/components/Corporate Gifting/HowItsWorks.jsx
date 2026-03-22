@@ -1,32 +1,34 @@
-import React from "react";
-import { FaCalendarAlt, FaBullhorn, FaGift } from "react-icons/fa";
+import React from 'react'
+import { FaBoxes } from "react-icons/fa";
+import { IoIosGift } from "react-icons/io";
+import { FaTruck } from "react-icons/fa";
 import ButtonAnimation from "../UnderlineEffect/ButtonAnimation";
 
 const content = [
   {
-    Icon: <FaCalendarAlt />,
-    para: "Corporate events, weddings, exhibitions & celebrity engagements — all managed seamlessly.",
-    Btn: "Explore Events",
+    Icon: <FaBoxes />,
+    para: "Tell us your budget, quantity, branding needs & timelines.",
+    Btn: "Share Your Requirement",
   },
 
   {
-    Icon: <FaBullhorn />,
-    para: "Creative videos, ads, branding & visuals that make your brand stand out.",
-    Btn: "Explore Branding",
+    Icon: <IoIosGift />,
+    para: "Premium products, branding mockups & approvals.",
+    Btn: "We Curate & Customize",
   },
   {
-    Icon: <FaGift />,
-    para: "Customized corporate gifts, bulk solutions & premium packaging tailored to your brand",
-    Btn: "Explore Gifting",
+    Icon: <FaTruck />,
+    para: "Pan-India delivery with seamless coordination.",
+    Btn: "Deliver & Execute",
   },
 ];
 
-const HowItsWork = () => {
+const HowItsWorks = () => {
   return (
-    <section className="py-18 px-10 overflow-hidden">
+   <section className="py-18 px-10 overflow-hidden">
       <div data-scroll data-scroll-speed="-.7">
         <h3 className="text-primary-dark text-6xl font-semibold uppercase font-heading">
-          OUR SERVICES
+          How its works
         </h3>
         <div className="full-box border-t border-black mt-8 grid grid-cols-4 gap-5 ">
           {content.map((item, index) => (
@@ -58,7 +60,7 @@ const HowItsWork = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HowItsWork;
+export default HowItsWorks

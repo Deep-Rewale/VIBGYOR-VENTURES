@@ -3,21 +3,22 @@ import { motion } from "framer-motion";
 import Underline from "../../components/UnderlineEffect/Underline";
 import Helping from "../../assets/Home/AboutUs/helping.jpg";
 import { GoArrowUpRight } from "react-icons/go";
+import Img1 from "../../assets/Home/AboutUs/Bhavesh-soni-01.png"
+import Img2 from "../../assets/Home/AboutUs/img2.png"
 const HomeAbout = () => {
   return (
     <section className="w-full rounded-t-3xl bg bg-[#56bdb4] py-20 px-10">
       <h1 className="text-7xl text-black font-heading leading-none tracking-tight max-w-[1500px]">
-        Curated corporate gifting and premium event solutions that help brands
-        express{" "}
+      We create meaningful experiences that help brands{" "}
         <span className="cursor-pointer">
           {" "}
-          <Underline> appreciation</Underline>
+          <Underline> connect</Underline>
         </span>
-        and{" "}
+        ,{" "}
         <span className="cursor-pointer">
-          <Underline>create</Underline>
+          <Underline>engage</Underline>
         </span>{" "}
-        lasting{" "}
+        and leave a lasting{" "}
         <span className="cursor-pointer">
           <Underline>impressions</Underline>
         </span>
@@ -29,27 +30,44 @@ const HomeAbout = () => {
           {/* left text */}
           <div className="w-1/2 ">
             <h2 className="text-xl font-body">About Vibgyor Venture:</h2>
+            <p> <p className="max-w-lg font-body text-xl mt-11 text-left  leading-relaxed">
+            Rooted in 2014, Foresight Events and Media Group (formerly known as Foresight Events and Entertainment) aims to create distinctive solutions for Events, Branding and Digital strategies that empowers companies to be more visible and visually appealing to their audience.
+            </p>
+            <p className="max-w-lg font-body text-xl mt-11 leading-relaxed">
+              Be it Corporate Events, Designing, Video Advertisements, Brand Promotions, Social Media Marketing and Up-scaling Digital Presence, we have been successful in establishing well-built relationships amongst Corporates and Startups.
+            </p></p>
+            {/* button  */}
+             <motion.button
+                initial="rest"
+                whileHover="hover"
+                className="rounded-4xl border border-black px-8 py-4 flex items-center uppercase gap-8 mt-7 text-white bg-black text-xl cursor-pointer"
+              >
+                Read more
+                <motion.div
+                  variants={{
+                    rest: { scale: 1 },
+                    hover: { scale: 3 },
+                  }}
+                  transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                  className="w-3 h-3 bg-white rounded-full flex items-center justify-center overflow-hidden"
+                >
+                  <motion.div
+                    variants={{
+                      rest: { opacity: 0, scale: 0 },
+                      hover: { opacity: 1, scale: 0.5 }, // ← 0.35 because parent is scaled x3
+                    }}
+                    transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                  >
+                    <GoArrowUpRight color="black" size={16} />
+                  </motion.div>
+                </motion.div>
+              </motion.button>
           </div>
           {/* right textf */}
           <div className="w-1/2 ">
-            <p className="max-w-lg font-body text-xl">
-              With over a decade of industry expertise, Vibgyor Venture bridges
-              the gap between brands and people through thoughtfully curated
-              corporate gifting solutions and meticulously planned corporate
-              events.
-            </p>
-            <p className="max-w-lg font-body text-xl mt-11">
-              Specialize in transforming business gestures into meaningful
-              experiences-helping organizations express appreciation, strengthen
-              relationships, and leave a lasting impression.
-            </p>
-            <p className="max-w-lg font-body text-xl mt-11">
-              Every gift we curate and every event we execute reflects our
-              commitment to quality, creativity, and seamless execution.From
-              premium executive gifts to large-scale conferences, we deliver
-              end-to-end solutions that reflect quality, precision, and brand
-              excellence.
-            </p>
+          <div className="w-full pl-20 ">
+            <img className="rounded-2xl h-150"  src={Img2} alt="" />
+          </div>
           </div>
         </div>
         {/* how can we help */}

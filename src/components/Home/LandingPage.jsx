@@ -1,5 +1,6 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { LuSparkles } from "react-icons/lu";
 import { FaGift } from "react-icons/fa";
 import { motion } from "motion/react";
 import ButtonAnimation from "../UnderlineEffect/ButtonAnimation";
@@ -15,9 +16,9 @@ const LandingPage = () => {
       <div className="hero-content ">
         <div className="left-text mt-52 px-20">
           <p className="text-primary font-semibold text-lg md:text-xl lg:text-2xl captilize">
-            India's #1 Corporate Gifting Platform
+            Corporate Gifting | Events | Brand Experiences
           </p>
-          {["Gifts That", "Strengthen", "Your Culture."].map((item, index) => (
+          {["Experiences ", "That Elevate ", "Your Brand."].map((item, index) => (
             <div className="flex items-center">
               {index === 1 && (
                 <motion.div
@@ -26,7 +27,7 @@ const LandingPage = () => {
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
                   className="mr-4 w-[8.5vw] h-[5.3vw] rounded-md  bg-primary flex items-center justify-center"
                 >
-                  <FaGift className="text-white md:text-5xl lg:text-6xl xl:text-7xl" />
+                  <LuSparkles className="text-white md:text-5xl lg:text-6xl xl:text-7xl" />
                 </motion.div>
               )}
               <h1
@@ -52,12 +53,12 @@ const LandingPage = () => {
           <div className="button cursor-pointer flex items-center gap-2 py-4 ">
             <ButtonAnimation
               fillColor="#333333"
-              className="border-2 border-gray-400 py-1 px-5 rounded-3xl font-heading text-xl uppercase "
+              className="border-2 border-[#333333] py-1 px-5 rounded-3xl font-heading text-xl uppercase "
             >
               Start gifting
             </ButtonAnimation>
 
-            <div className=" border-gray-400  rounded-full border-2 p-2">
+            <div className=" border-[#333333]  rounded-full border-2 p-2">
               <GoArrowUpRight />
             </div>
           </div>
