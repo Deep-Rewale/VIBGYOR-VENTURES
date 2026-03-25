@@ -17,7 +17,7 @@ const CorporateGifting = () => {
      <HowItsWorks />
      <GiftingPicks />
      <Marque  />
-     <ReadyToGifting />
+     <ReadyToGifting  text1={"Ready"} text2={"to start"} text3={"Gifting"} btnText={"start gifting"}/>
      <Footer heading1={"Gifts That"} heading2={"Strengthen"} heading3={"Your Culture."} />
     </div>
   )

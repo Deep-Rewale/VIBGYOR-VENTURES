@@ -3,13 +3,14 @@ import { motion } from "motion/react";
 import { GoArrowUpRight } from "react-icons/go";
 import ButtonAnimation from "../UnderlineEffect/ButtonAnimation";
 
-const ReadyToGifting = () => {
+const ReadyToGifting = ({text1,text2,text3,btnText}) => {
   return (
-    <section className="py-30 w-full bg-[#56bdb4] flex flex-col justify-center items-center">
+    <section className="py-30 w-full bg-[#56bdb4] flex flex-col justify-center items-center overflow-hidden">
+      <div data-scroll data-scroll-speed="-.7">
       <div className="text-center font-bold uppercase  ">
-        <h3 className="tracking-tight  text-[10vw] leading-none">Ready</h3>
-        <h3 className=" tracking-tight text-[10vw] leading-none">to start</h3>
-        <h3 className=" tracking-tight text-[10vw] leading-none"> Gifting</h3>
+        <h3 className="tracking-tight  text-[10vw] leading-none">{text1}</h3>
+        <h3 className=" tracking-tight text-[10vw] leading-none">{text2}</h3>
+        <h3 className=" tracking-tight text-[10vw] leading-none"> {text3}</h3>
       </div>
       {/* buttons */}
       <div className="space-y-4 text-center flex flex-col justify-center items-center">
@@ -19,7 +20,7 @@ const ReadyToGifting = () => {
             whileHover="hover"
             className="rounded-4xl border border-black px-10 py-4 flex items-center uppercase gap-8 mt-7 text-white bg-black text-xl cursor-pointer"
           >
-            Start gifting
+            {btnText}
             <motion.div
               variants={{
                 rest: { scale: 1 },
@@ -50,6 +51,7 @@ const ReadyToGifting = () => {
             hello@vibgyorventures.com
           </ButtonAnimation>
         </div>
+      </div>
       </div>
     </section>
   );

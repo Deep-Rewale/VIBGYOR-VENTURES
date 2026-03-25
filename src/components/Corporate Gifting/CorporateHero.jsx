@@ -21,7 +21,7 @@ const CorporateHero = () => {
   return (
     <section className='bg-page py-20 px-10'>
         <div className="hero-title mt-25 text-main">
-          <h1 className='text-5xl md:text-6xl lg:text-8xl xl:text-9xl  font-bold  uppercase   tracking-tighter'>Corporate </h1>
+          <h1 className='text-5xl md:text-6xl lg:text-8xl xl:text-9xl  font-bold  uppercase   tracking-tighter text-primary'>Corporate </h1>
           <h1 className='text-5xl md:text-6xl lg:text-8xl  xl:text-9xl font-bold  uppercase   tracking-tighter'>Gifting </h1>
         </div>
         {/* what we do */}

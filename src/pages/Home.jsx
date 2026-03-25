@@ -12,7 +12,7 @@ import Testimonials from "../components/Home/Testimonials";
 
 const Home = () => {
   return (
-        <div >
+        <div  className="overflow-hidden">
       <LandingPage />
       <Marque />
       <HomeAbout />

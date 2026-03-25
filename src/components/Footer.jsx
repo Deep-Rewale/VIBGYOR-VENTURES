@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from "../assets/Company-logo/logo.png";
 import Underline from "./UnderlineEffect/Underline";
+import { Link } from "react-router-dom";
 
 const Footer = ({heading1, heading2, heading3}) => {
   return (
-    <section className="bg-page h-screen py-20 rounded-t-3xl px-10 relative">
-      <div className="flex">
+    <section  className="bg-page h-screen py-20 rounded-t-3xl px-10 relative">
+      <div   className="flex">
         {/* Left content */}
         <div className="w-1/2 ">
           <h3 className="text-[6vw] leading-none  uppercase font-bold text-main">
@@ -27,27 +28,35 @@ const Footer = ({heading1, heading2, heading3}) => {
             <p className="text-xl font-heading cursor-pointer">QL :</p>
             <p className="text-xl font-heading cursor-pointer">
               <span>
-                <Underline height={2}>Home</Underline>
+                <Link to="/"><Underline height={2}>Home</Underline></Link>
               </span>
             </p>
             <p className="text-xl font-heading cursor-pointer">
               <span>
-                <Underline height={2}>Categories</Underline>
+                <Link to={"/About"}><Underline height={2}>About us</Underline></Link>
+                </span>
+            </p>
+            <p className="text-xl font-heading cursor-pointer">
+              <span>
+                <Link to={"/event-management"}> <Underline height={2}>Event Management</Underline></Link>
+               
               </span>
             </p>
             <p className="text-xl font-heading cursor-pointer">
               <span>
-                <Underline height={2}>Feedback</Underline>
+                <Link to={"/branding&advertising"}> <Underline height={2}>Branding & Advertising</Underline></Link>
               </span>
             </p>
             <p className="text-xl font-heading cursor-pointer">
               <span>
-                <Underline height={2}>Terms & Conditions</Underline>
+             <Link to={"/corporate-gifting"}><Underline height={2}>Corporate Gifting</Underline></Link>
+                
               </span>
             </p>
             <p className="text-xl font-heading cursor-pointer">
               <span>
-                <Underline height={2}>Help</Underline>
+             <Link to={"/Contact"}><Underline height={2}>Contact</Underline></Link>
+                
               </span>
             </p>
           </div>
@@ -66,23 +75,28 @@ const Footer = ({heading1, heading2, heading3}) => {
             <div className="space-y-2 text-main">
               <h3 className="text-xl font-heading cursor-pointer">S :</h3>
               <p className="text-xl font-heading cursor-pointer">
-                <a href="">
+                <a target="_blank" href="https://www.instagram.com/foresightemg">
                   <Underline height={2}>Instagram</Underline>
                 </a>
               </p>
               <p className="text-xl font-heading cursor-pointer">
-                <a href="">
+                <a target="_blank" href="https://www.facebook.com/foresightemg">
                   <Underline height={2}>Facebook</Underline>
                 </a>
               </p>
               <p className="text-xl font-heading cursor-pointer">
-                <a href="">
+                <a target="_blank" href="https://www.linkedin.com/company/foresightemg">
                   <Underline height={2}>Linkedin</Underline>
                 </a>
               </p>
               <p className="text-xl font-heading cursor-pointer">
-                <a href="">
+                <a target="_blank" href="https://x.com/foresightemg">
                   <Underline height={2}>Twitter</Underline>
+                </a>
+              </p>
+               <p className="text-xl font-heading cursor-pointer">
+                <a target="_blank" href="https://www.youtube.com/channel/UC9bC2Vd1BnY976vtJu6Y3Og">
+                  <Underline height={2}>Youtube</Underline>
                 </a>
               </p>
             </div>
